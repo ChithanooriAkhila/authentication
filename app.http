@@ -1,0 +1,44 @@
+
+//api1============================================
+
+
+
+//s1==========
+###
+
+post http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "name": "Adam Richard",
+  "password": "richard_345",
+  "gender": "male",
+  "location": "Detroit"
+}
+
+
+
+
+//api2============================================
+###
+post http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_3"
+}
+
+//api3============================================
+###
+
+put http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard_345",
+  "newPassword": "richard@123"
+}
+
